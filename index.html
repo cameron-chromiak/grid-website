@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <hmtl>
 <head>
-  <title>Cameron</title>
+  <title>Responsive Grid</title>
   <link rel="stylesheet" href="style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -11,21 +11,24 @@
 </script>
 </head>
 <body>
+  <div class="grid-container">
   <div class="nav" id="nav">
     <div class="nav-container" id="-nav-container">
-      <div class="nav-brand">Link</div>
-      <div a>Link</div>
-      <div a>Link</div>
+      <div class="nav-brand">Brandy <br />McBrandBrand</div>
+      <h3><a href="#">Link 1</a></h3>
+      <h3><a href="#">Link 2</a></h3>
+      <h3><a href="#">Link 3</a></h3>
     </div>
   </div>
-  <div class="side-bar" id="side-bar">
-    <img src="https://mdn.mozillademos.org/files/15630/align4.png" />
+  <div class="side-bar" id="side-bar" >
+    <h4>BOOM</h4>
   </div>
   <main class="main" id ="main">
     <section class="section-A">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur voluptas ad doloribus, aspernatur, veniam non perferendis quaerat repudiandae esse harum quos obcaecati nisi sequi, quis deleniti ab mollitia porro maxime fugiat. Accusamus fugit, quod eos nemo inventore culpa, excepturi aperiam doloribus quis veritatis velit illo voluptatum quos cum impedit qui voluptas natus iure laborum omnis dignissimos vitae nihil perferendis, corporis facere. Accusamus suscipit ipsam veritatis cupiditate ad asperiores cum, omnis distinctio atque tenetur magnam nisi enim sequi adipisci sint, delectus?
     </section>
     <section class="section-B">
+      <img src="https://mdn.mozillademos.org/files/15630/align4.png" />
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur voluptas ad doloribus, aspernatur, veniam non perferendis quaerat repudiandae esse harum quos obcaecati nisi sequi, quis deleniti ab mollitia porro maxime fugiat. Accusamus fugit, quod eos nemo inventore culpa, excepturi aperiam doloribus quis veritatis velit illo voluptatum quos cum impedit qui voluptas natus iure laborum omnis dignissimos vitae nihil perferendis, corporis facere. Accusamus suscipit ipsam veritatis cupiditate ad asperiores cum, omnis distinctio atque tenetur magnam nisi enim sequi adipisci sint, delectus?
     </section>
     <section class="section-C">
@@ -43,4 +46,17 @@
         <h3><a href="#">Link</a></h3>
     </section>
   </footer>
-</body>
+  </div>
+
+<script type="text/javascript">
+
+  $('document').ready(function(){
+    document.getElementById('nav').addEventListener('click',toggleUI);
+
+    function toggleUI(){
+      alert("x");
+    }
+
+  });
+
+</script>
