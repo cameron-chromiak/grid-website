@@ -40,7 +40,19 @@
     "advert main main"
     "footer footer footer";
 }
-
+/*  TOGGLE CLASSES FOR THEME  */
+.nav-dark{
+  background:#373737;
+}
+.side-bar-dark{
+  background: #32393d;
+}
+.footer-dark{
+  background: #2d2d2d;
+}
+.main-dark{
+  background: #bdbdbd;
+}
 @media (max-width: 721px){
   .footer-main{
     grid-area: footer;

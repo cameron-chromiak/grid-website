@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet" type="text/css" />
 
 </script>
@@ -41,6 +42,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa harum deleniti nisi praesentium obcaecati, ea molestiae odio ad debitis quibusdam in laudantium similique commodi non necessitatibus maiores ipsum ipsam quos.</p>
     </section>
     <section class="footer-left">
+      <button type="button" id="ui-toggle" class="btn btn-dark">Dark</button>
         <h3><a href="#">Link</a></h3>
         <h3><a href="#">Link</a></h3>
         <h3><a href="#">Link</a></h3>
@@ -51,10 +53,17 @@
 <script type="text/javascript">
 
   $('document').ready(function(){
-    document.getElementById('nav').addEventListener('click',toggleUI);
+    document.getElementById('ui-toggle').addEventListener('click',toggleUI);
+    var sideBar = document.getElementById('side-bar');
+    var footer = document.getElementById('footer-main');
+    var main = document.getElementById('main');
 
     function toggleUI(){
-      alert("x");
+      nav.classList.toggle("nav-dark");
+      sideBar.classList.toggle("side-bar-dark");
+      main.classList.toggle("main-dark");
+      footer.classList.toggle("footer-dark");
+
     }
 
   });
