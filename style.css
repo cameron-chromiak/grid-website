@@ -1,6 +1,7 @@
 .footer-right{
   display: inline-block;
-  margin-left: 10%;
+  margin: 50px;
+  text-align: center;
 }
 .footer-left{
   max-width: 60%;
@@ -29,6 +30,11 @@
   background: #116466;
   color: #FFCB9A;
   /* margin-bottom: 10px; */
+}
+.nav >h3{
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
 }
 h1{
   color: #116466;
