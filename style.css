@@ -1,23 +1,37 @@
+.footer-right{
+  display: inline-block;
+  margin-left: 10%;
+}
+.footer-left{
+  max-width: 60%;
+  display: inline-block;
+}
 .footer-main{
   grid-area: footer;
-  background: salmon;
-  /* margin-top: 10px; */
+  background: #2c3531;
+  color: #FFCB9A !important;
+  padding: 10px;
 }
 .main{
   grid-area: main;
-  background: lightgray;
+  background: #d1e8e2;
   padding: 1em;
+
 }
 .side-bar{
   grid-area: advert;
-  background: lightblue;
+  background: #D9B08C;
   padding: 1em;
   /* margin-left: 10px; */
 }
 .nav{
   grid-area: header;
-  background: lightgreen;
+  background: #116466;
+  color: #FFCB9A;
   /* margin-bottom: 10px; */
+}
+h1{
+  color: #116466;
 }
 .nav-brand{
   font-size: 22px;
@@ -28,6 +42,15 @@
   flex-direction: row;
   padding: 8px;
 }
+.nav-items-conatiner{
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  margin-top: 25px;
+}
+.nav-items-container >h3{
+  margin-right: 10px;
+}
 .nav-container >h3{
   padding: 5px;
 }
@@ -35,6 +58,7 @@
   display: grid;
   grid-template-columns: 100px 1fr 1fr;
   grid-template-rows: auto;
+  grid-gap: 5px;
   grid-template-areas:
     "header header header"
     "advert main main"
@@ -54,22 +78,27 @@
   background: #bdbdbd;
 }
 @media (max-width: 721px){
+
   .footer-main{
     grid-area: footer;
   }
   .main{
     grid-area: main;
+    padding: 10px;
   }
   .side-bar{
     grid-area: advert;
   }
   .nav{
     grid-area: header;
+
   }
   .grid-container{
+    /* grid */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+    grid-gap: 0px;
     grid-template-areas:
     "header header header"
     "advert advert advert"
@@ -86,4 +115,9 @@ body, html{
 }
 a{
   text-decoration: none;
+  color: inherit;
+}
+img{
+  max-width: 90%;
+  padding: 20px;
 }
