@@ -14,11 +14,11 @@
 <body>
   <div class="grid-container">
   <div class="nav" id="nav">
+    <h2><a href="#">Brand!</a></h2>
     <div class="nav-container" id="-nav-container">
-      <div class="nav-brand">Brandy <br />McBrandBrand</div>
-      <h3><a href="#">Link 1</a></h3>
-      <h3><a href="#">Link 2</a></h3>
-      <h3><a href="#">Link 3</a></h3>
+      <h4><a href="#">Link 1</a></h4>
+      <h4><a href="#">Link 2</a></h4>
+      <h4><a href="#">Link 3</a></h4>
     </div>
   </div>
   <div class="side-bar" id="side-bar" >
@@ -37,16 +37,16 @@
     </section>
   </main>
   <footer class="footer-main" id="footer-main">
-    <section class="footer-left">
+    <div class="footer-left">
         <h1>About</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa harum deleniti nisi praesentium obcaecati, ea molestiae odio ad debitis quibusdam in laudantium similique commodi non necessitatibus maiores ipsum ipsam quos.</p>
-    </section>
-    <section class="footer-right">
+    </div>
+    <div class="footer-right">
       <button type="button" id="ui-toggle" class="btn btn-dark">Go Dark</button>
         <h3><a href="#">Link</a></h3>
         <h3><a href="#">Link</a></h3>
         <h3><a href="#">Link</a></h3>
-    </section>
+    </div>
   </footer>
   </div>
 
@@ -57,12 +57,19 @@
     var sideBar = document.getElementById('side-bar');
     var footer = document.getElementById('footer-main');
     var main = document.getElementById('main');
+    var toggleButtonText = document.getElementById('ui-toggle';
 
     function toggleUI(){
       nav.classList.toggle("nav-dark");
       sideBar.classList.toggle("side-bar-dark");
       main.classList.toggle("main-dark");
       footer.classList.toggle("footer-dark");
+      if (toggleUI == true){
+        toggleButtonText.innerHTML = "Go Light";
+      }
+      else{
+        return 0;
+      }
 
     }
 
